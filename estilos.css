@@ -30,14 +30,14 @@ header {
   border-right: 0;
 }
 
-form {
+.formBasico {
   text-align: center;
   width: 450px;
   margin: 20px auto;
   gap: 8px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr) 40px;
+  grid-template-rows: repeat(2, 1fr) 30px;
   grid-template-areas:
     "a b"
     "c d"
@@ -73,4 +73,36 @@ form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr)40px;
+}
+
+/* calculadoraBásica */
+.title {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.formIndex {
+  width: 650px;
+  min-height: 200px;
+  /* border: 10px solid black; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 3px;
+}
+
+.item2 {
+  height: 30px;
+  margin: 10px;
+  width: 100%;
+}
+
+.item1 {
+  font-size: 1rem;
+}
+
+#enviarDato {
+  text-align: center;
 }
