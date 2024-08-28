@@ -76,18 +76,20 @@ header {
 }
 
 /* calculadoraBásica */
-.title {
+.titulo {
   text-align: center;
+  border: 1px solid black;
 }
 
 h1 {
   text-align: center;
+  font-size: 40px;
 }
 
 .formIndex {
   width: 650px;
   min-height: 200px;
-  /* border: 10px solid black; */
+  border: 10px solid black;
   margin: 0 auto;
   text-align: center;
   padding: 3px;

@@ -8,17 +8,21 @@
 </head>
 <body>
 
-<header>
-  <h1>formulario</h1>
-</header>
+  <header>
+    <h1>formulario</h1>
+  </header>
 
-<div class="formIndex">
-  <form action="ejercicios/formularioBasico/index.php" method="POST">
-    <button type="submit" class="item2">Formulario Básico</button>
-  </form>
-  <form action="ejercicios/calculadoraBasica/index.php" method="POST">
-    <button type="submit" class="item2">Calculadora básica</button>
-  </form>
-</div>
+  <div class="formIndex">
+    <form action="ejercicios/formularioBasico/index.php" method="POST">
+      <button type="submit" class="item2">Formulario Básico</button>
+    </form>
+    <form action="ejercicios/calculadoraBasica/index.php" method="POST">
+      <button type="submit" class="item2">Calculadora básica</button>
+    </form>
+    <form action="ejercicios/ejerciciosSecuenciales/index.php" method="POST">
+      <button type="submit" class="item2">Ejercicios secuenciales</button>
+    </form>
+  </div>
+
 </body>
 </html>
