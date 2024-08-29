@@ -5,24 +5,38 @@
 }
 
 body {
-  background-color: rgb(242, 245, 245);
+  background-color: rgb(208, 228, 228);
   font-family: monospace;
+  width: 100%;
 }
 
-/* Index.php */
+h1 {
+  text-transform: uppercase;
+
+
+}
+
+.titulo {
+  text-align: center;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+/* Estilos a secuenciales.php */
 .container {
   margin: 20px auto;
   width: 500px;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr) 50px;
+  grid-template-rows: repeat(3, 1fr);
   gap: 0px 12px;
   grid-template-areas:
     "ejercicio1 ejercicio2"
     "ejercicio3 ejercicio4"
     "index index";
-  border: 1px solid black;
 }
 
 .ejercicio1 {
@@ -43,15 +57,75 @@ body {
 
 .index {
   grid-area: index;
-  display: grid;
   justify-items: center;
+  height: 30%;
 
 }
 
 .item {
   border: 1px solid red;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
   margin: 3px auto;
+  border: 30px;
+  background-color: rgb(207, 80, 80);
+  color: white;
+  width: 100%;
+}
+
+/* Estilos a dolaresAPesos.php */
+
+.container2 {
+  display: grid;
+  margin: 20px auto;
+  width: 550px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "elemento1"
+    "elemento2"
+  ;
+}
+
+.elemento1 {
+  grid-area: elemento1;
+}
+
+.elemento2 {
+  grid-area: elemento2;
+}
+
+/* Estilos llamada.php */
+
+.container3 {
+  display: grid;
+  margin: 20px auto;
+  width: 600px;
+
+}
+
+/* Estilos metroCubicos.php */
+
+.container4 {
+  margin: 20px auto;
+  display: grid;
+  width: 550px;
+}
+
+/* Estilos areaTruangulo.php */
+
+.container5 {
+  margin: 20px auto;
+
+  width: 550px;
+
+}
+
+.formArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "base inputBase"
+    "altura inputAltura"
+    "enviarDato enviarDato"
+  ;
 }

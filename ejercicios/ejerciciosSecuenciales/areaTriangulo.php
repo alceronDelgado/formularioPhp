@@ -4,23 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Area triángulo</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Metros Cubicos</h1>
+    <h1 class="titulo">Metros Cubicos</h1>
   </header>
 
-  <div class="container">
-    <form action="" method="post">
-      <label>Base:
+  <div class="container5">
+    <form action="" method="post" class="formArea">
+      <div class="base">
+        <label>Base:
+        </label>
+      </div>
+      <div class="inputBase">
         <input type="number" name="base" id="" min="0" placeholder="Digite la base">
-      </label>
-      <br>
-      <label>Altura:
+      </div>
+      <div class="altura">
+        <label>Altura:
+        </label>
+      </div>
+      <div class="inputAltura">
         <input type="number" name="altura" id="" min="0" placeholder="Digite la altura">
-      </label>
-      <button type="submit">Calcular</button>
+      </div>
+
+
+
+      <br>
+      <div class="enviarDato">
+
+        <button type="submit">Calcular</button>
+      </div>
     </form>
     <form action="../../index.php" method="post" >
       <button type="submit" class="item">Index</button>

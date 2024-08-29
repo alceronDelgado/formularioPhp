@@ -17,7 +17,7 @@
           <label for="">
               <span>dolares a pesos</span>
           </label>
-          <button type="submit" class="item">Ejercicio 1</button>
+          <button type="submit" class="item" id="ejercicio1">Ejercicio 1</button>
       </form>
     </div>
     <div class="ejercicio2">

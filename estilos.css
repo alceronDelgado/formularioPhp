@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+/* Estilos generales
+Son los estilos que aplica a todas las etiquetas
+
+*/
+
 body {
   background-color: rgb(242, 245, 245);
   font-family: monospace;
@@ -14,6 +19,16 @@ header {
   text-transform: uppercase;
 }
 
+h1 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+
+
+/* Estilos index.php */
+
 .container {
   width: 450px;
   margin: 20px auto;
@@ -21,14 +36,23 @@ header {
   display: grid;
 }
 
-.item {
-  font-size: 20px;
-  width: 200px;
-  height: 35px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+.formIndex {
+  width: 650px;
+  min-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3px;
 }
+
+
+.item2 {
+  height: 30px;
+  margin: 10px;
+  width: 100%;
+}
+
+
+/* Estilos formularioBasico.php */
 
 .formBasico {
   text-align: center;
@@ -75,36 +99,68 @@ header {
   grid-template-rows: repeat(2, 1fr)40px;
 }
 
-/* calculadoraBásica */
-.titulo {
-  text-align: center;
-  border: 1px solid black;
+.item {
+  font-size: 20px;
+  width: 200px;
+  height: 35px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
-h1 {
-  text-align: center;
-  font-size: 40px;
+
+/* Estilos de formulario calculadora */
+
+.formCalculadora {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "frmCl1 frmCl2"
+    "frmCl3 frmCl4"
+    "frmCl5 frmCl6"
+    "calcular calcular";
+
+
+
 }
 
-.formIndex {
-  width: 650px;
-  min-height: 200px;
-  border: 10px solid black;
-  margin: 0 auto;
-  text-align: center;
-  padding: 3px;
+.frmCl1 {
+  grid-area: frmCl1;
 }
 
-.item2 {
+
+.frmCl2 {
+  grid-area: frmCl2;
+}
+
+.frmCl3 {
+  grid-area: frmCl3;
+}
+
+.frmCl4 {
+  grid-area: frmCl4;
+}
+
+
+.frmCl5 {
+  grid-area: frmCl5;
+}
+
+
+.frmCl6 {
+  grid-area: frmCl6;
+}
+
+.calcular {
+  grid-area: calcular;
+  display: grid;
+  justify-content: center;
+  margin-top: 10px;
   height: 30px;
-  margin: 10px;
-  width: 100%;
 }
 
 .item1 {
   font-size: 1rem;
-}
-
-#enviarDato {
-  text-align: center;
+  text-transform: uppercase;
 }

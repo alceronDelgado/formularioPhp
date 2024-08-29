@@ -16,20 +16,15 @@
 <div class="container">
   <form action="index.php" method="post" class="formBasico">
   <div class="a">
-
     <input type="text" name="nombre" id="" class="item" placeholder="nombre">
-
   </div>
   <div class="b">
-
     <input type="date" name="fecha" id="" class="item">
-
   </div>
   <div class="c">
     <input type="number" name="edad" id="" placeholder="edad" class="item">
   </div>
   <div class="d">
-
     <input type="number" name="numTelefono" id="" placeholder="telefono" class="item" min="0">
   </div>
   <div class="enviar">

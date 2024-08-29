@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Metros Cubicos</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Metros Cubicos</h1>
+    <h1 class="titulo">Metros Cubicos</h1>
   </header>
 
-  <div class="container">
+  <div class="container5">
     <form action="" method="post">
       <label>Cantidad de litros registrados por mes:
         <input type="number" name="litros" id="" min="0" >

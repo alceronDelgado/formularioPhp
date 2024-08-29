@@ -8,32 +8,39 @@
 </head>
 <body>
   <header>
-    <h1>Dolares a pesos</h1>
+    <h1 class="titulo">Dolares a pesos</h1>
   </header>
 
-  <div class="container">
+  <div class="container2">
+    <div class="elemento1">
     <form action="" method="post">
       <label>digite el valor a convertir
         <input type="number" name="valor" id="" min="0" >
         <button type="submit">Convertir</button>
       </label>
     </form>
-    <form action="../../index.php" method="post" >
-      <button type="submit" class="item">Index</button>
-    </form>
+    </div>
+
+    <div class="elemento2">
+      <form action="../../index.php" method="post" >
+        <button type="submit" class="item">Index</button>
+      </form>
+    </div>
+
+
   </div>
 
   <?php
 
   if ($_POST) {
-    $valor = $_POST['valor'];
-    $resultado = $valor * 4052;
-
-    echo $valor." USD es igual a: ".$resultado;
+    $resultado = $_POST['valor'] * 4052;
   }
 
 
   ?>
 
+    <div class="elemento3">
+      <h1 class="titulo"><?php     echo " USD es igual a: ".$resultado; ?></h1>
+    </div>
 </body>
 </html>
