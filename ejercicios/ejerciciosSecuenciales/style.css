@@ -102,6 +102,31 @@ label {
 
 }
 
+.box-llamada{
+  display: grid;
+  margin: 20px auto;
+  width: 600px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-areas: "itemLlamada1"
+  "itemLlamada2"
+  "itemLlamada3"
+  ;
+}
+
+.itemLlamada1{
+  grid-area: itemLlamada1;
+}
+.itemLlamada2{
+  grid-area: itemLlamada2;
+
+}.itemLlamada3{
+  grid-area: itemLlamada3;
+}
+
+
+
+
 /* Estilos metroCubicos.php */
 
 .container4 {

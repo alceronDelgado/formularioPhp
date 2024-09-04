@@ -9,7 +9,7 @@
 <body>
 
   <header>
-    <h1>formulario</h1>
+    <h1>Ejercicios PHP</h1>
   </header>
 
   <div class="formIndex">
@@ -21,6 +21,9 @@
     </form>
     <form action="ejercicios/ejerciciosSecuenciales/secuenciales.php" method="POST">
       <button type="submit" class="item2">Ejercicios secuenciales</button>
+    </form>
+    <form action="ejercicios/ejerciciosCondicionales/computadoraAbaco.php" method="POST">
+      <button type="submit" class="item2">Ejercicios condicionales</button>
     </form>
   </div>
 

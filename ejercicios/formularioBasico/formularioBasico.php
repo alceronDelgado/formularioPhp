@@ -14,7 +14,7 @@
 </header>
 
 <div class="container">
-  <form action="index.php" method="post" class="formBasico">
+  <form action="formularioBasico.php" method="post" class="formBasico">
   <div class="a">
     <input type="text" name="nombre" id="" class="item" placeholder="nombre">
   </div>
@@ -52,6 +52,10 @@
   </div>
 
   <?php } ?>
+
+  <form action="../../index.php" method="post">
+    <button class="item2" type="submit">Index</button>
+  </form>
 
 </div>
 

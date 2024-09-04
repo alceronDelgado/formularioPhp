@@ -25,6 +25,9 @@
       <form action="../../index.php" method="post" >
         <button type="submit" class="item">Index</button>
       </form>
+      <form action="secuenciales.php" method="post">
+        <button type="submit" class="item">Volver a ejercicios</button>
+      </form>
     </div>
 
 
@@ -34,13 +37,16 @@
 
   if ($_POST) {
     $resultado = $_POST['valor'] * 4052;
-  }
-
 
   ?>
 
-    <div class="elemento3">
-      <h1 class="titulo"><?php     echo " USD es igual a: ".$resultado; ?></h1>
+  <div class="elemento3">
+      <h1 class="titulo"><?php echo $_POST['valor']." USD es igual a: $".$resultado." COP"; ?></h1>
     </div>
+
+  <?php
+  }
+  ?>
+
 </body>
 </html>

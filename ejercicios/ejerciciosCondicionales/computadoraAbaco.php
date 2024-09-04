@@ -11,7 +11,7 @@
     </header>
 
     <div class="container">
-        <form action="" method="post">
+        <form action="computadoraAbaco.php" method="post">
             <input type="number" name="valor" id="" min=0 placeholder="valor computador">
             <select name="option" id="">
                 <option value="----">Seleccione marca</option>
@@ -23,8 +23,6 @@
             <button type="submit">Calcular</button>
         </form>
     </div>
-
-
 <?php
 
 if($_POST){
@@ -39,35 +37,7 @@ if($_POST){
     $totalIva = 0;
     $totalAPagar = 0;
 
-
-    if($valor >= 1000000){
-        $descuento += 0.10;
-    }
-
-    if($option == 'ABACO'){
-        $descuento += 0.05;
-    }
-
-    //Descuento computador
-    $totalDescuento = ($descuento * $valor) / 100;
-    //Aplicar iva
-    $totalIva = ($valor * $iva) / 100;
-    //sumar totalComputador + descuento aplicando iva.
-    $totalAPagar = ($totalIva - $totalDescuento) +$valor;
-
-    echo "Valor descuento: ".$totalDescuento;
-    echo "Valor total: ".$totalAPagar;
-
-
-    $total = $valor * (1 - $descuento);
-
-    $valorIva = $valor * (1 + $total);
-}
-
-?>
-
-
-if (($valor >= $costeComputador) && ($option == 'ABACO')) {
+    if (($valor >= $costeComputador) && ($option == 'ABACO')) {
         echo "coste del computador es: mayor a 1 millon";
         $descuento = 15;
         $case = '1';
@@ -80,9 +50,8 @@ if (($valor >= $costeComputador) && ($option == 'ABACO')) {
         $descuento = 10;
         $case = '3';
     }
-    echo $descuento;
 
-switch ($case) {
+    switch ($case) {
         case '1':
             //Descuento computador
             $totalDescuento = ($descuento * $valor) / 100;
@@ -112,12 +81,16 @@ switch ($case) {
         default:
             echo "No hay ninguna opciòn establecida";
             break;
-
-
     }
 
+    $total = $valor * (1 - $descuento);
 
+    $valorIva = $valor * (1 + $total);
 
+    echo "Total a pagar: $".$totalAPagar." COP";
+}
+
+?>
 
 </body>
 </html>
