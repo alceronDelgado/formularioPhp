@@ -49,6 +49,11 @@ if($_POST){
     }elseif ($valor >= $costeComputador) {
         $descuento = 10;
         $case = '3';
+    }elseif($valor < 100000){
+        $descuento = 0;
+        $case = '4';
+    }else{
+        echo "";
     }
 
     switch ($case) {
@@ -76,6 +81,10 @@ if($_POST){
             $totalIva = ($valor * $iva) / 100;
             //sumar totalComputador + descuento aplicando iva.
             $totalAPagar = ($totalIva - $totalDescuento) +$valor;
+            break;
+        case '4':
+                $totalIva = ($valor * $iva) / 100;
+                $totalAPagar = $totalIva  +$valor;
             break;
 
         default:

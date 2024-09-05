@@ -22,7 +22,7 @@
     <form action="ejercicios/ejerciciosSecuenciales/secuenciales.php" method="POST">
       <button type="submit" class="item2">Ejercicios secuenciales</button>
     </form>
-    <form action="ejercicios/ejerciciosCondicionales/computadoraAbaco.php" method="POST">
+    <form action="ejercicios/ejerciciosCondicionales/condicionales.php" method="POST">
       <button type="submit" class="item2">Ejercicios condicionales</button>
     </form>
   </div>

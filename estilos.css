@@ -10,7 +10,7 @@ Son los estilos que aplica a todas las etiquetas
 */
 
 body {
-  background-color: rgb(242, 245, 245);
+  background-color: rgb(91, 105, 105);
   font-family: monospace;
 }
 
@@ -24,8 +24,6 @@ h1 {
   font-size: 40px;
   text-transform: uppercase;
 }
-
-
 
 /* Estilos index.php */
 
