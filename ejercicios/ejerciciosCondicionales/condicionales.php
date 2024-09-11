@@ -34,22 +34,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios condicionales</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Condicionales</h1>
+    <h1 class="title">Condicionales</h1>
 </header>
 
-<div class="container6">
+<div class="container">
     <form action="computadoraAbaco.php" method="post">
-        <button type="submit">Abaco</button>
+        <div class="item">
+            <button type="submit" class="element">Abaco</button>
+        </div>
     </form>
     <form action="peras.php" method="post">
-        <button type="submit">Peras</button>
+        <div class="item">
+            <button type="submit" class="element">Peras</button>
+        </div>
     </form>
     <form action="hormonas.php" method="post">
-        <button type="submit">Hormonas</button>
+        <div class="item">
+            <button type="submit" class="element">Hormonas</button>
+        </div>
+    </form>
+    
+    <form action="../../index.php" method="post">
+        <div class="item">
+            <button type="submit" class="element">Index</button>
+        </div>
     </form>
 </div>
 
