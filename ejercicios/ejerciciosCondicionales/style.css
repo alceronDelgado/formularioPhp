@@ -46,6 +46,67 @@ body{
 
 /* Hormonas.php */
 
+.container-4{
+    width: 400px;
+    height: 30px;
+    min-width: 30%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "hormonas"
+    "boxHormonas";
+    /* border: 3px solid red; */
+}
+
+.hormonas{
+    border: 1px solid yellow;
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    grid-template-areas: 
+    "labelHormonas1 itemHormonas1"
+    "labelHormonas2 itemHormonas2"
+    "itemHormonas3 itemHormonas3"
+    ;
+}
+
+.itemHormonas{
+    width: 60%;
+}
+
+.labelHormonas1{
+    display: grid;
+    grid-area: labelHormonas1;
+}
+
+.itemHormonas1{
+    display: grid;
+    grid-area: itemHormonas1;
+}
+
+.labelHormonas2{
+    display: grid;
+    grid-area: labelHormonas2;
+}
+
+.itemHormonas2{
+    display: grid;
+    grid-area: itemHormonas2;
+}
+
+.itemHormonas3{
+    display: grid;
+    grid-area: itemHormonas3;
+}
+
+.boxHormonas{
+    display: grid;
+    width: 400px;
+    height: 100%;
+    margin: 0px auto;
+    padding-top: 8px;
+}
 
 /* ComputadoraAbaco.php */
 

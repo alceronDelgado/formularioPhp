@@ -10,19 +10,17 @@
     <header>
         <h1 class="title">Hormonas</h1>
     </header>
-    <div class="">
-        <form action="hormonas.php" method="post">
-            <div class="elemento">
-                <input type="number" name="edad" id="" placeholder="digite la edad del paciente" min="0">
-            </div>
-            <div class="elemento">
-                <input type="number" name="hormonas" id="" placeholder="digite la cantidad de hormonas" step=".01" min="0">
-            </div>
-            <div class="elemento">
-                <button type="submit">Enviar</button>
-            </div>
+    <div class="container-4">
+        <form action="hormonas.php" method="post" class="hormonas">
+            <label for="" class="labelHormonas1">Digite edad del paciente
+            </label>
+            <input type="number" name="edad" id="" placeholder="digite la edad del paciente" min="0" class="itemHormonas1">
+
+            <label for="" class="labelHormonas2">Digite su indice de hormonas:
+            </label>
+            <input type="number" name="hormonas" id="" placeholder="digite la cantidad de hormonas" step=".01" min="0" class="itemHormonas2">
+            <button type="submit" class="itemHormonas3">Enviar</button>
         </form>
-    </div>
 
 <?php
     $edad = 0;
@@ -47,11 +45,11 @@ if ($_POST) {
 }
 ?>
 
-<div class="box">
-    <h1><?php echo $edad;?></h1>
-    <h1><?php echo $nivelHormonas;?></h1>
-    <h1><?php echo $resultado;?></h1>
-</div>
-
+    <div class="boxHormonas">
+        <h1><?php echo "Edad digitada por el usuario: ".$edad; ?>
+        <h1><?php echo "Nivel Hormonas digitada por el usuario: ".$edad; ?></h1>
+        <h1><?php echo "Resultado: ".$resultado;?></h1>
+    </div>
+    </div>
 </body>
 </html>
