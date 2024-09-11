@@ -108,3 +108,51 @@ body{
 .resul{
     text-align: center;
 }
+
+/* Peras.php */
+
+.container-3{
+    display: grid;
+    width: 350px;
+    margin: 0px auto;
+    grid-template: repeat(2,1fr)/1fr;
+    grid-template-areas: 
+    "peras"
+    "inicioPeras";
+
+}
+
+.peras{
+    grid-area: peras;
+    display: grid;
+    grid-template: repeat(2,1fr) / 1fr;
+    grid-template-areas: 
+    "cantidad"
+    "enviar"
+    ;
+}
+
+.inicioPeras{
+    display: grid;
+    grid-area: inicioPeras;
+}
+
+.cantidad{
+    grid-area: cantidad;
+    height: 30px;
+}
+
+.enviar{
+    grid-area: enviar;
+    height: 30px;
+}
+
+.itemPeras{
+    padding: 10px;
+}
+
+.resultadoPeras{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}

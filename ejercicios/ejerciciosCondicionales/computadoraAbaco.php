@@ -128,7 +128,21 @@ if($_POST){
 ?>
 
 
-<h1 class="resul"><?php echo "Total a pagar: $".$totalAPagar." COP"; ?></h1>
+<h1 class="resul">
+    <?php 
+
+    $resultado = "Total a pagar: $ ";
+
+    if ($totalAPagar == 0) {
+        echo "";
+    }else{
+        echo $resultado.$totalAPagar." COP"; 
+        
+        
+    }
+
+    ?>
+</h1>
 
 
 </body>

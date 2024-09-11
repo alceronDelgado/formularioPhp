@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRUTASS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="title">
         <h1>Fruteria</h1>
     </header>
 
-    <div class="container">
-        <form action="peras.php" method="post">
-            <input type="number" name="cantidad" id="" placeholder="digite la cantidad" min="0">
-            <button type="submit">Calcular</button>
-        </form>
+    <div class="container-3">
+        <div class="itemPeras">
+            <form action="peras.php" method="post" class="peras">
+                <input type="number" name="cantidad" id="" placeholder="digite la cantidad" min="0" class="cantidad ">
+                <button type="submit" class="enviar">Calcular</button>
+            </form>
+        </div>
+        <div class="itemPeras">
+            <form action="condicionales.php" method="post" class="inicioPeras ">
+                <button type="submit">Inicio</button>
+            </form>
+        </div>
     </div>
 
 
@@ -46,17 +54,16 @@
 ?>
 
 
-<h1><?php echo "Cantidades digitadas: ".$cantidad; ?></h1>
-<h1><?php echo "Valor unidad: $".$valorPera. " COP";?></h1>
-<h1><?php echo "Tienes un descuento de : ".$descuento. "%";?></h1>
-<h1><?php echo "Total a pagar: $".$totalAPagar." COP";?></h1>
+<h1 class="resultadoPeras"><?php echo "Cantidades digitadas: ".$cantidad; ?></h1>
+<h1 class="resultadoPeras"><?php echo "Valor unidad: $".$valorPera. " COP";?></h1>
+<h1 class="resultadoPeras"><?php echo "Tienes un descuento de : ".$descuento. "%";?></h1>
+<h1 class="resultadoPeras"><?php echo "Total a pagar: $".$totalAPagar." COP";?></h1>
+
+
 
 <?php
 }
 
 ?>
-
-
-
 </body>
 </html>
