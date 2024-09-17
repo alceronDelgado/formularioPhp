@@ -58,12 +58,19 @@
             <button type="submit" class="element">Hormonas</button>
         </div>
     </form>
+
+    <form action="calcularArea.php" method="post">
+        <div class="item">
+            <button type="submit" class="element">Calcular Area</button>
+        </div>
+    </form>
     
     <form action="../../index.php" method="post">
         <div class="item">
             <button type="submit" class="element">Index</button>
         </div>
     </form>
+
 </div>
 
 </body>
