@@ -8,7 +8,7 @@
 <body>
 
     
-    <div class="container-6">
+    <div class="container-2">
         <form action="calcularArea.php" method="post">
             <select name="figura" id="">
                 <option value="---">---</option>

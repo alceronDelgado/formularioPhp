@@ -64,12 +64,17 @@
             <button type="submit" class="element">Calcular Area</button>
         </div>
     </form>
-    
+    <form action="aquaMenta.php" method="post">
+        <div class="item">
+            <button type="submit" class="element">Horario trabajadores</button>
+        </div>
+    </form>
     <form action="../../index.php" method="post">
         <div class="item">
             <button type="submit" class="element">Index</button>
         </div>
     </form>
+
 
 </div>
 
