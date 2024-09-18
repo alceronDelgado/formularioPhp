@@ -69,6 +69,16 @@
             <button type="submit" class="element">Horario trabajadores</button>
         </div>
     </form>
+    <form action="censos.php" method="post">
+        <div class="item">
+            <button type="submit" class="element">Censos regionales</button>
+        </div>
+    </form>
+    <form action="tipoTriangulo.php" method="post">
+        <div class="item">
+            <button type="submit" class="element">Tipo triángulo</button>
+        </div>
+    </form>
     <form action="../../index.php" method="post">
         <div class="item">
             <button type="submit" class="element">Index</button>
